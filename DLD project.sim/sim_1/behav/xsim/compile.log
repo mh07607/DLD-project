@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/draw_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nospace_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module illegal_move_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module position_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module position_registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tictactoe
+INFO: [VRFC 10-2458] undeclared symbol player1_play, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v:57]
+INFO: [VRFC 10-2458] undeclared symbol player2_play, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v:59]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/win_detect_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module winner_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module winner_detect_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sim_1/new/tb_TicTacToe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TicTacToe

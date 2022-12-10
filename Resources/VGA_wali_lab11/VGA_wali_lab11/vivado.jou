@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Nov 16 23:06:29 2022
+# Process ID: 7484
+# Current directory: C:/Users/ps/VGA_wali_lab11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4408 C:\Users\ps\VGA_wali_lab11\VGA_wali_lab11.xpr
+# Log file: C:/Users/ps/VGA_wali_lab11/vivado.log
+# Journal file: C:/Users/ps/VGA_wali_lab11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/ps/VGA_wali_lab11/VGA_wali_lab11.xpruupdate_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

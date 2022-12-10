@@ -1,0 +1,14 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sim_1/new/tb_TicTacToe.v,1668581165,verilog,,,,tb_TicTacToe,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/draw_detector.v,1668571619,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v,,nospace_detector,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v,1668571531,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v,,illegal_move_detector,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v,1668572459,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_decoder.v,,fsm_controller,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_decoder.v,1668571365,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v,,position_decoder,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v,1668582524,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v,,position_registers,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v,1668580393,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/win_detect_unit.v,,tictactoe,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/win_detect_unit.v,1668571173,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v,,winner_detector,,,,,,,,
+D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v,1668571235,verilog,,D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sim_1/new/tb_TicTacToe.v,,winner_detect_3,,,,,,,,
