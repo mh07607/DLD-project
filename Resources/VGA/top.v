@@ -2,8 +2,8 @@
 module top(
     input clk,
     input reset, 
-    input play1, 
-    input play2, 
+    //input play1, 
+    //input play2, 
     input left, right, up, down, sel, //input [1:0] pos,
     //input [15:0] sel_en,
     output h_sync,v_sync,
@@ -17,6 +17,8 @@ module top(
     wire [9:0] y_loc;
     wire [1:0] who;
     wire [3:0] select_position;
+    //wire play1;
+    //wire play2;
 
     //assign who = 2'b00;
    // assign select_position = 4'b0000;
@@ -25,8 +27,8 @@ module top(
     
     tictactoe (clk_d,
          reset, 
-         play1, 
-         play2, 
+         //play1, 
+         //play2, 
          left, right, up, down, sel,  
          who,
          p1,p2,p3,p4,p5,p6,p7,p8,p9, p10, p11, p12, p13, p14, p15, p16,

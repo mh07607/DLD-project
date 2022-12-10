@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Dec 10 14:34:34 2022
-# Process ID: 10704
+# Start of session at: Sat Dec 10 20:13:01 2022
+# Process ID: 7248
 # Current directory: D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.runs/synth_1/top.vds
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2412
+INFO: [Synth 8-7075] Helper process launched with PID 11660
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/top.v:2]
 INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/clk_div.v:2]
@@ -27,8 +27,8 @@ INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/uni/OneDrive - Habib Univ
 INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/clk_div.v:2]
 INFO: [Synth 8-6157] synthesizing module 'tictactoe' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v:23]
 INFO: [Synth 8-6157] synthesizing module 'input_encoder' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v:38]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v:35]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v:44]
 INFO: [Synth 8-6155] done synthesizing module 'input_encoder' (2#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v:23]
 INFO: [Synth 8-6157] synthesizing module 'position_registers' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'position_registers' (3#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:23]
@@ -53,7 +53,7 @@ INFO: [Synth 8-6157] synthesizing module 'fsm_controller' [D:/uni/OneDrive - Hab
 	Parameter PLAYER1 bound to: 2'b01 
 	Parameter PLAYER2 bound to: 2'b10 
 	Parameter GAME_DONE bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:51]
+INFO: [Synth 8-226] default block is never used [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:52]
 INFO: [Synth 8-6155] done synthesizing module 'fsm_controller' (10#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'tictactoe' (11#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v:23]
 INFO: [Synth 8-6157] synthesizing module 'h_counter' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/h_counter.v:2]
@@ -70,22 +70,22 @@ INFO: [Synth 8-6157] synthesizing module 'vga_sync' [D:/uni/OneDrive - Habib Uni
 	Parameter VB bound to: 33 - type: integer 
 	Parameter VR bound to: 2 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (14#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/vga_sync.v:2]
-INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/pixel_gen.v:164]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (15#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/pixel_gen.v:164]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/pixel_gen.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (15#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/pixel_gen.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'top' (16#1) [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/top.v:2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1013.867 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -97,11 +97,23 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'who[0]'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:34]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:34]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'play1'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'play2'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'who[0]'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:44]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'who[1]'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:45]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'play1'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'play2'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'pos[1]'. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:55]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/constrs_1/new/chaljapls.xdc:55]
@@ -120,30 +132,41 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1013.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'input_encoder'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fsm_controller'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:54]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:54]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                           000000
+                 iSTATE4 |                              001 |                           000001
+                 iSTATE3 |                              010 |                           000010
+                 iSTATE2 |                              011 |                           000100
+                 iSTATE1 |                              100 |                           001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'input_encoder'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:57]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -153,10 +176,10 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' 
                GAME_DONE |                               11 |                               11
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'fsm_controller'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:54]
-WARNING: [Synth 8-327] inferring latch for variable 'player2_play_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'player2_play_reg' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v:62]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -170,20 +193,22 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 80    
 +---Registers : 
 	               10 Bit    Registers := 2     
-	                4 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
 	                2 Bit    Registers := 15    
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	  16 Input   16 Bit        Muxes := 2     
 	   2 Input   16 Bit        Muxes := 2     
 	  16 Input    4 Bit        Muxes := 2     
 	   2 Input    4 Bit        Muxes := 62    
+	   5 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 24    
 	   3 Input    2 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 63    
-	   6 Input    1 Bit        Muxes := 2     
-	   5 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 68    
+	   6 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 7     
 	   4 Input    1 Bit        Muxes := 13    
 	  16 Input    1 Bit        Muxes := 1     
 	   3 Input    1 Bit        Muxes := 8     
@@ -202,35 +227,28 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nolabel_line26/position_reg_unit/p12_reg[1]__0/Q' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:214]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:214]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:214]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nolabel_line26/position_reg_unit/p12_reg[0]__0/Q' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:214]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:214]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:214]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin winner with 1st driver pin 'i_0/nolabel_line26/win_detect_unit/u17/i_398/O' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v:29]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin winner with 2nd driver pin 'GND' [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v:29]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net winner is connected to at least one constant driver which has been preserved, other driver is ignored [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v:29]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\nolabel_line28/position_reg_unit/p12_reg[1] ) from module (top) as it is equivalent to (\nolabel_line28/position_reg_unit/p12_reg[1]__0 ) and driving same net [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:230]
+INFO: [Synth 8-4765] Removing register instance (\nolabel_line28/position_reg_unit/p12_reg[0] ) from module (top) as it is equivalent to (\nolabel_line28/position_reg_unit/p12_reg[0]__0 ) and driving same net [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v:230]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -248,37 +266,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:14 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:14 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:14 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:14 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -296,34 +314,34 @@ Report Cell Usage:
 +------+-----+------+
 |1     |BUFG |     2|
 |2     |LUT1 |     3|
-|3     |LUT2 |    25|
-|4     |LUT3 |    10|
-|5     |LUT4 |    14|
-|6     |LUT5 |    15|
-|7     |LUT6 |    38|
-|8     |FDCE |     4|
-|9     |FDRE |    34|
-|10    |IBUF |     8|
+|3     |LUT2 |    31|
+|4     |LUT3 |    15|
+|5     |LUT4 |    21|
+|6     |LUT5 |    28|
+|7     |LUT6 |    75|
+|8     |FDCE |    17|
+|9     |FDRE |    37|
+|10    |IBUF |     7|
 |11    |OBUF |    14|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 1013.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 9 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1014.953 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:01:10 . Memory (MB): peak = 1013.867 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 1013.867 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1013.867 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1013.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 14 Warnings, 17 Critical Warnings and 0 Errors encountered.
+56 Infos, 18 Warnings, 12 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1014.953 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:28 . Memory (MB): peak = 1013.867 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 14:35:34 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 20:14:44 2022...

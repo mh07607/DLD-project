@@ -42,7 +42,7 @@ module position_decoder(input[3:0] in, input enable, output wire [15:0] out_en);
  4'd13: temp1 <= 16'b0010000000000000;
  4'd14: temp1 <= 16'b0100000000000000;
  4'd15: temp1 <= 16'b1000000000000000;
- default: temp1 <= 16'b0000000000000001; 
+ default: temp1 <= 16'b0000000000000000; 
  endcase 
 end 
 endmodule

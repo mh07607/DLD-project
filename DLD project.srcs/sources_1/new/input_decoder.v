@@ -20,11 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module input_encoder(input clk, input left, input right, input down, input up, input select/*, output reg[3:0] player_position*/, output reg [3:0] select_position);
-reg [4:0] state;
-wire[4:0] buttons;
+module input_encoder(input clk, 
+input left, input right, input down, input up, 
+input select, 
+input p1_turn, input p2_turn,
+/*, output reg[3:0] player_position*/ 
+output reg [3:0] select_position, 
+output reg [3:0] player1_position, output reg [3:0] player2_position,
+output reg play_1, output reg play_2);
 
-//initial ;
+
+reg [5:0] state;
+wire[5:0] buttons;
+
+
 
 
 assign buttons={select, left, right, up, down};
@@ -36,55 +45,77 @@ begin
     5'b00000:
             begin
                 case(buttons)
-                    4'b0001:
+                    5'b00001:
                             begin   
                                 state<=4'b0001;
                                 select_position <= select_position - 4 ;
                             end
-                    4'b0010:
+                    5'b00010:
                             begin   
                                 state<=4'b0010;
                                 select_position <= select_position + 4;
                             end
-                    4'b0100:
+                    5'b00100:
                             begin   
                                 state<=4'b0100;
                                 select_position <= select_position + 1;
                             end
-                    4'b1000:
+                    5'b01000:
                             begin   
                                 state<=4'b1000;
                                 select_position <= select_position - 1;
-                            end                                                        
+                            end 
+                    5'b10000:
+                            begin   
+                                if(p1_turn == 1)
+                                    begin
+                                        player1_position = select_position;
+                                        play_1 = 1'b1;
+                                        play_1 = 1'b0;
+                                    end
+                                else if(p2_turn == 1)
+                                    begin
+                                        player2_position = select_position;
+                                        play_2 = 1'b1;
+                                        play_2 = 1'b0;
+                                    end
+                            end                                                                             
                 endcase
             end
     5'b00001:
             begin
-                if (buttons==4'b0000)
-                    state<=4'b0000;
+                if (buttons==5'b00000)
+                    state<=5'b00000;
             end
     5'b00010:
             begin
-                if (buttons==4'b0000)
-                    state<=4'b0000;
+                if (buttons==5'b00000)
+                    state<=5'b00000;
+            end
+    5'b00100:
+            begin
+                if (buttons==5'b00000)
+                    state<=5'b00000;
             end
     5'b01000:
             begin
-                if (buttons==4'b0000)
-                    state<=4'b0000;
-            end
-    4'b1000:
+                if (buttons==5'b00000)
+                    state<=5'b00000;
+            end         
+    5'b10000:
             begin
-                if (buttons==4'b0000)
-                    state<=4'b0000;
-            end                        
+                if (buttons==5'b00000)
+                    state<=5'b00000;
+            end                              
 endcase
 end 
 initial
     begin
     //leds=8'b111;
+    play_1 = 1'b0;
+    play_2 = 1'b0;
     select_position = 4'b0000;
-    state=2'b00;
+    state=5'b0000;
     end
      
     

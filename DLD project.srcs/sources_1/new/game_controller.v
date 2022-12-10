@@ -29,10 +29,11 @@ module fsm_controller(
      draw, // draw detected 
      win, // winner detected 
      output reg player2_play, // enable player to play 
-     player1_play // enable player to play 
+     player1_play
+    // enable player to play 
      );
 // FSM States 
-parameter IDLE=2'b00;
+parameter IDLE =2'b00;
 parameter PLAYER1=2'b01;
 parameter PLAYER2=2'b10;
 parameter GAME_DONE=2'b11;
@@ -52,7 +53,7 @@ always @(*)
  IDLE: begin 
   if(reset==1'b0) //&& play1 == 1'b1)
   begin
-   play1 = 1'b1;
+   //play1 = 1'b1;
    next_state <= PLAYER1; // player to play 
   end
   else 
@@ -63,14 +64,15 @@ always @(*)
  PLAYER1:begin 
   player1_play <= 1'b1;
   player2_play <= 1'b0;
-  if(wrong_move==1'b0)
+  if(wrong_move==1'b0 && play1 == 1'b1)
    next_state <= PLAYER2; // player2 to play 
   else 
    next_state <= IDLE;
  end 
  PLAYER2:begin 
   player1_play <= 1'b0;
-  if(play2==1'b0) begin 
+  //assign play1 = 1'b0;
+  if(wrong_move == 1'b1) begin 
    next_state <= PLAYER2;
    player2_play <= 1'b0;
   end

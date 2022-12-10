@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sat Dec 10 14:37:16 2022
+| Date             : Sat Dec 10 20:18:16 2022
 | Host             : DESKTOP-PEGIUMG running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.364        |
+| Total On-Chip Power (W)  | 1.593        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.290        |
+| Dynamic (W)              | 1.518        |
 | Device Static (W)        | 0.075        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 78.2         |
-| Junction Temperature (C) | 31.8         |
+| Max Ambient (C)          | 77.0         |
+| Junction Temperature (C) | 33.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.199 |      161 |       --- |             --- |
-|   LUT as Logic |     0.161 |       76 |     20800 |            0.37 |
+| Slice Logic    |     0.332 |      246 |       --- |             --- |
+|   LUT as Logic |     0.292 |      131 |     20800 |            0.63 |
 |   BUFG         |     0.029 |        2 |        32 |            6.25 |
-|   Register     |     0.009 |       47 |     41600 |            0.11 |
-|   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |     0.137 |      136 |       --- |             --- |
-| I/O            |     0.954 |       22 |       106 |           20.75 |
+|   Register     |     0.011 |       63 |     41600 |            0.15 |
+|   Others       |     0.000 |        8 |       --- |             --- |
+| Signals        |     0.257 |      202 |       --- |             --- |
+| I/O            |     0.928 |       21 |       106 |           19.81 |
 | Static Power   |     0.075 |          |           |                 |
-| Total          |     1.364 |          |           |                 |
+| Total          |     1.593 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.376 |       0.364 |      0.012 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.047 |       0.034 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.263 |       0.262 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.626 |       0.613 |      0.013 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.046 |       0.033 |      0.013 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.257 |       0.256 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,15 +137,15 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| top                        |     1.290 |
+| top                        |     1.518 |
 |   cd                       |     0.049 |
-|   hc                       |     0.130 |
-|   nolabel_line26           |     0.048 |
-|     inp_unit               |     0.025 |
-|     position_reg_unit      |     0.010 |
-|     tic_tac_toe_controller |     0.013 |
+|   hc                       |     0.152 |
+|   nolabel_line28           |     0.267 |
+|     inp_unit               |     0.172 |
+|     position_reg_unit      |     0.004 |
+|     tic_tac_toe_controller |     0.091 |
 |   pg                       |     0.004 |
-|   vc                       |     0.024 |
+|   vc                       |     0.026 |
 +----------------------------+-----------+
 
 

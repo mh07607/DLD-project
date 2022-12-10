@@ -23,8 +23,8 @@
 module tictactoe(
      input clk, 
      input reset, 
-     input play1, 
-     input play2, 
+     //input play1, 
+     //input play2, 
      input left, right, up, down, sel, 
      //input [3:0] player1_position, player2_position, 
      // positions to play 
@@ -44,9 +44,12 @@ module tictactoe(
  wire wrong_move; // disable writing when an illegal move is detected 
  //positions = {2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00, 2'b00};//wire [1:0] pos1,pos2,pos3,pos4,p5,p6,p7,p8,p9, p10, p11, pt12, p13, p14, p15;// positions stored
  wire winner; // win signal 
- wire player1; // player1 enabling signal 
- wire player2; // player2 enabling signal 
+ wire player1_play; // player1 enabling signal 
+ wire player2_play; // player2 enabling signal 
  wire draw;
+ 
+ wire play1;
+ wire play2;
   // draw signal 
  // position registers    
   //input_encoder input_unit(clk, left, right, up, down, sel, player1_position, select_position);
@@ -59,7 +62,11 @@ module tictactoe(
   
   //assign select_position = 4'b0000;
   
-  input_encoder inp_unit(clk, left, right, up, down, sel, select_position, player1_position);
+  input_encoder inp_unit
+  (clk, left, right, up, down, sel, 
+  player1_play, player2_play, 
+  select_position, player1_position, player2_position, 
+  play1, play2);
 
   
   position_registers position_reg_unit(
