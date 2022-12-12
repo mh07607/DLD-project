@@ -47,37 +47,38 @@ begin
                 case(buttons)
                     5'b00001:
                             begin   
-                                state<=4'b0001;
-                                select_position <= select_position - 4 ;
+                                state<=5'b00001;
+                                select_position <= select_position - 4;
                             end
                     5'b00010:
                             begin   
-                                state<=4'b0010;
+                                state<=5'b00010;
                                 select_position <= select_position + 4;
                             end
                     5'b00100:
                             begin   
-                                state<=4'b0100;
+                                state<=5'b00100;
                                 select_position <= select_position + 1;
                             end
                     5'b01000:
                             begin   
-                                state<=4'b1000;
+                                state<=5'b01000;
                                 select_position <= select_position - 1;
                             end 
                     5'b10000:
-                            begin   
-                                if(p1_turn == 1)
+                            begin
+                                state<=5'b10000;   
+                                if(p1_turn == 1'b1)
                                     begin
                                         player1_position = select_position;
                                         play_1 = 1'b1;
-                                        play_1 = 1'b0;
+                                        //play_1 = 1'b0;
                                     end
-                                else if(p2_turn == 1)
+                                else if(p2_turn == 1'b1)
                                     begin
                                         player2_position = select_position;
                                         play_2 = 1'b1;
-                                        play_2 = 1'b0;
+                                       //play_2 = 1'b0;
                                     end
                             end                                                                             
                 endcase

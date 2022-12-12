@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Resources/VGA/clk_div.v" \
+"../../../../DLD project.srcs/sources_1/new/draw_detector.v" \
+"../../../../DLD project.srcs/sources_1/new/false_move_detector.v" \
+"../../../../DLD project.srcs/sources_1/new/game_controller.v" \
+"../../../../Resources/VGA/h_counter.v" \
+"../../../../DLD project.srcs/sources_1/new/input_decoder.v" \
+"../../../../Resources/VGA/pixel_gen.v" \
+"../../../../DLD project.srcs/sources_1/new/position_decoder.v" \
+"../../../../DLD project.srcs/sources_1/new/position_registers.v" \
+"../../../../DLD project.srcs/sources_1/new/select_position_decoder.v" \
+"../../../../DLD project.srcs/sources_1/new/tictactoe.v" \
+"../../../../Resources/VGA/v_counter.v" \
+"../../../../Resources/VGA/vga_sync.v" \
+"../../../../DLD project.srcs/sources_1/new/win_detect_unit.v" \
+"../../../../DLD project.srcs/sources_1/new/winner_detect_3.v" \
+"../../../../Resources/VGA/top.v" \
+"../../../../DLD project.srcs/sources_1/new/button_clock.v" \
+"../../../../DLD project.srcs/sources_1/new/button_damper.v" \
+"../../../../DLD project.srcs/sources_1/new/button_debug.v" \
+"../../../../DLD project.srcs/sources_1/new/pixel_gen_2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

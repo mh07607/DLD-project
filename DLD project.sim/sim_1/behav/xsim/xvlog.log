@@ -1,20 +1,58 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/draw_detector.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module nospace_detector
+INFO: [VRFC 10-311] analyzing module draw_detector
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module illegal_move_detector
+INFO: [VRFC 10-311] analyzing module wrong_move_detector
+INFO: [VRFC 10-2458] undeclared symbol iilegal9, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:38]
+INFO: [VRFC 10-2458] undeclared symbol iilegal10, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:39]
+INFO: [VRFC 10-2458] undeclared symbol iilegal11, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:40]
+INFO: [VRFC 10-2458] undeclared symbol iilegal12, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:41]
+INFO: [VRFC 10-2458] undeclared symbol iilegal13, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:42]
+INFO: [VRFC 10-2458] undeclared symbol iilegal14, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:43]
+INFO: [VRFC 10-2458] undeclared symbol iilegal15, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:44]
+INFO: [VRFC 10-2458] undeclared symbol iilegal16, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:45]
+INFO: [VRFC 10-2458] undeclared symbol iilegal25, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:55]
+INFO: [VRFC 10-2458] undeclared symbol iilegal26, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:56]
+INFO: [VRFC 10-2458] undeclared symbol iilegal27, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:57]
+INFO: [VRFC 10-2458] undeclared symbol iilegal28, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:58]
+INFO: [VRFC 10-2458] undeclared symbol iilegal29, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:59]
+INFO: [VRFC 10-2458] undeclared symbol iilegal30, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:60]
+INFO: [VRFC 10-2458] undeclared symbol iilegal31, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:61]
+INFO: [VRFC 10-2458] undeclared symbol iilegal32, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/false_move_detector.v:62]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/game_controller.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fsm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/input_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_decoder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module position_decoder
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/position_registers.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module position_registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/select_position_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_position_decoder
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tictactoe
-INFO: [VRFC 10-2458] undeclared symbol player1_play, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v:57]
-INFO: [VRFC 10-2458] undeclared symbol player2_play, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/tictactoe.v:59]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/win_detect_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module winner_detector
+INFO: [VRFC 10-2458] undeclared symbol who17, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/win_detect_unit.v:46]
+INFO: [VRFC 10-2458] undeclared symbol who18, assumed default net type wire [D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/win_detect_unit.v:47]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/winner_detect_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module winner_detect_3
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sim_1/new/tb_TicTacToe.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_TicTacToe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/Resources/VGA/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/button_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/button_damper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_damper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/button_debug.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debug
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/uni/OneDrive - Habib University/Student shiz/DLD/DLD project/DLD project.srcs/sources_1/new/pixel_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen_2

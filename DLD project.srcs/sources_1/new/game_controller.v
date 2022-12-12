@@ -64,6 +64,8 @@ always @(*)
  PLAYER1:begin 
   player1_play <= 1'b1;
   player2_play <= 1'b0;
+  if(win == 1'b1 || draw == 1'b1)
+    next_state <= GAME_DONE; 
   if(wrong_move==1'b0 && play1 == 1'b1)
    next_state <= PLAYER2; // player2 to play 
   else 
@@ -71,20 +73,21 @@ always @(*)
  end 
  PLAYER2:begin 
   player1_play <= 1'b0;
+  player2_play <= 1'b1;
   //assign play1 = 1'b0;
-  if(wrong_move == 1'b1) begin 
+  if(wrong_move == 1'b1 || play2 == 1'b0) begin 
    next_state <= PLAYER2;
-   player2_play <= 1'b0;
+   //player2_play <= 1'b0;
   end
-  else if(win==1'b0 && draw == 1'b0)
+  else if(win==1'b0 && draw == 1'b0 && play2 == 1'b1)
   begin 
-   next_state <= IDLE;
-   player2_play <= 1'b1;// player2 to play when play2=1
+    next_state <= IDLE;
+   //player2_play <= 1'b1;// player2 to play when play2=1
   end 
   else if(draw == 1 || win ==1'b1)
   begin 
    next_state <= GAME_DONE; // game done 
-   player2_play <= 1'b1;// player2 to play when play2=1
+   //player2_play <= 1'b1;// player2 to play when play2=1
   end  
  end 
  GAME_DONE:begin // game done
