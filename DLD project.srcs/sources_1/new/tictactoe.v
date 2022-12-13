@@ -61,9 +61,20 @@ module tictactoe(
    //input_encoder inp_unit(clk, left, right, up, down, sel, player2_position, select_position);
   
   //assign select_position = 4'b0000;
+   fsm_controller tic_tac_toe_controller(
+     clk,// clock of the circuit 
+     reset,// reset 
+     play1, // player1 plays 
+     play2,// player2 plays 
+     wrong_move,// incorrect move detected 
+     draw, // draw detected 
+     winner, // winner detected 
+     player1_play, // enable player1 to play 
+     player2_play // enable player2 to play 
+     );    
   
   input_encoder inp_unit
-  (clk, left, right, up, down, sel, 
+  (clk, left, right, down, up, sel, 
   player1_play, player2_play, 
   select_position, player1_position, player2_position, 
   play1, play2);
@@ -96,18 +107,10 @@ module tictactoe(
    p1,p2,p3,p4,p5,p6,p7,p8,p9, p10, p11, p12, p13, p14, p15, p16, 
    draw
     ); 
- fsm_controller tic_tac_toe_controller(
-     clk,// clock of the circuit 
-     reset,// reset 
-     play1, // player1 plays 
-     play2,// player2 plays 
-     wrong_move,// incorrect move detected 
-     draw, // draw detected 
-     winner, // winner detected 
-     player1_play, // enable player1 to play 
-     player2_play // enable player2 to play 
-     );    
+    
+    
+
      
- 
+
 //top vga(clk, sel_en, hsync, vsync, red, green, blue);
 endmodule

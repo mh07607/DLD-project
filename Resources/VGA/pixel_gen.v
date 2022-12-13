@@ -16,8 +16,8 @@ output reg [3:0] blue=0
 
 always @(posedge clk_d)
 begin
-
-if((pixel_x<=160) && (pixel_x>=0) && (pixel_y >=0) && (pixel_y <=120))
+if( (pixel_y <=120)) begin
+if((pixel_x<=160) && (pixel_x>=0))
 begin
     if(select_position == 4'b0000) begin
         red <= video_on ? 4'h0 : 4'h0;
@@ -45,7 +45,7 @@ begin
     end
  end
  
- else if((pixel_x<=320) && (pixel_x>=161) && (pixel_y >=0) && (pixel_y <=120))
+ else if((pixel_x<=320) && (pixel_x>=161))
 begin
     if(select_position == 4'b0001) begin
         red <= video_on ? 4'h0 : 4'h0;
@@ -73,7 +73,7 @@ begin
     end
  end
  
-  else if((pixel_x<=480) && (pixel_x>=321) && (pixel_y >=0) && (pixel_y <=120))
+  else if((pixel_x<=480) && (pixel_x>=321))
 begin
     if(select_position == 4'b0010) begin
         red <= video_on ? 4'h0 : 4'h0;
@@ -101,7 +101,7 @@ begin
     end 
  end
  
-   else if((pixel_x<=639) && (pixel_x>=481) && (pixel_y >=0) && (pixel_y <=120))
+   else if((pixel_x<=639) && (pixel_x>=481))
 begin
     if(select_position == 4'b0011) begin
         red <= video_on ? 4'h0 : 4'h0;
@@ -128,7 +128,7 @@ begin
        green <= video_on ? 4'h0: 4'h0;
     end
  end
- 
+end
 else if((pixel_x<=160) && (pixel_x>=0) && (pixel_y >=121) && (pixel_y <=240))
 begin
     if(select_position == 4'b0100) begin
@@ -464,57 +464,6 @@ begin
        green <= video_on ? 4'hF: 4'h0;
     end
  end
- 
- 
- 
-    /*else 
-    begin
-    
-    if (pixel_y==0)
-        vert=0;
-    else if (pixel_y==120)
-        vert=1;
-    else if (pixel_y==240)
-        vert=0;
-    else if (pixel_y==360)
-        vert=1;
-    else if (pixel_y==480)
-        vert=0;
-    //else if (pixel_y==300)
-        //vert=1;    
-    //else if (pixel_y==360)
-        //vert=0;
-    //else if (pixel_y==420)
-        //vert=1;
-        
-        
-        if (pixel_x>639)
-            greater=1;
-        else
-            greater=0;
-            if (pixel_x==0)
-        hor=0;
-    else if (pixel_x==160)
-        hor=1;
-    else if (pixel_x==320)
-        hor=0;
-    else if (pixel_x==480)
-        hor=1;
-    else if (pixel_x==640)
-        hor=0;
-    //else if (pixel_x==300)
-        //hor=1;    
-    //else if (pixel_x==360)
-        //hor=0;
-    //else if (pixel_x==420)
-        //hor=1;
-
-    on=hor^vert;
-    red <= video_on? (greater? (4'h0):(on? 4'h0:4'hF)): (4'h0);
-    green <= video_on? (greater? (4'hF):(on? 4'h0:4'hF)): (4'h0);
-    blue <= video_on? (greater? (4'h0):(on? 4'h0:4'hF)): (4'h0);
-    
-    end*/
     
     
 end

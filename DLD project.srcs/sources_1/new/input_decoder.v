@@ -34,8 +34,6 @@ reg [5:0] state;
 wire[5:0] buttons;
 
 
-
-
 assign buttons={select, left, right, up, down};
 
 
@@ -48,12 +46,12 @@ begin
                     5'b00001:
                             begin   
                                 state<=5'b00001;
-                                select_position <= select_position - 4;
+                                select_position <= select_position + 4;
                             end
                     5'b00010:
                             begin   
                                 state<=5'b00010;
-                                select_position <= select_position + 4;
+                                select_position <= select_position - 4;
                             end
                     5'b00100:
                             begin   
@@ -67,7 +65,8 @@ begin
                             end 
                     5'b10000:
                             begin
-                                state<=5'b10000;   
+                                state<=5'b10000;  
+                             
                                 if(p1_turn == 1'b1)
                                     begin
                                         player1_position = select_position;
@@ -78,7 +77,7 @@ begin
                                     begin
                                         player2_position = select_position;
                                         play_2 = 1'b1;
-                                       //play_2 = 1'b0;
+                                        //play_2 = 1'b0;
                                     end
                             end                                                                             
                 endcase
