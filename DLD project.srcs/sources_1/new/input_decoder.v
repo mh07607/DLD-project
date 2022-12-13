@@ -70,12 +70,14 @@ begin
                                 state<=5'b10000;   
                                 if(p1_turn == 1'b1)
                                     begin
+                                        play_2 = 1'b0;
                                         player1_position = select_position;
                                         play_1 = 1'b1;
                                         //play_1 = 1'b0;
                                     end
                                 else if(p2_turn == 1'b1)
                                     begin
+                                        play_1 = 1'b0;
                                         player2_position = select_position;
                                         play_2 = 1'b1;
                                        //play_2 = 1'b0;

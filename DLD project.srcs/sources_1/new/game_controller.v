@@ -68,7 +68,7 @@ always @(*)
     next_state <= GAME_DONE; 
   if(wrong_move==1'b0 && play1 == 1'b1)
    next_state <= PLAYER2; // player2 to play 
-  else 
+  else if (wrong_move == 1'b1 || play1 == 1'b0)
    next_state <= IDLE;
  end 
  PLAYER2:begin 
